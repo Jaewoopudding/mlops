@@ -1,21 +1,18 @@
 name: jaewoo_test1
 on: [push, fork]
 jobs:
-  build:
-  name: My first job
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - name: Set up env
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.9.17
-    - name: Install Dependencies
-      run: |
-        make install
-    - name: Lint
-      run: |
-        make lint
-    - name: Test
-      run: |
-        make test
+  my_second_job:
+    name: My second job
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up env
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9.17
+      - name: Install Dependencies
+        run: make install
+      - name: Lint
+        run: make lint
+      - name: Test
+        run: make test
