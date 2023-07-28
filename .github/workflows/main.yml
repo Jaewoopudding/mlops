@@ -1,8 +1,9 @@
-name: jaewoo_test
+name: jaewoo_test2
 on: [push, fork]
 jobs:
   my_second_job:
     name: My second job
+    runs-on: ununtu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Set up env
