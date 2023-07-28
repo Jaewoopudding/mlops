@@ -1,0 +1,19 @@
+name: jaewoo_test
+run_name: Deploy new code 
+on: [push, fork]
+jobs:
+  my_fisrt_job:
+    name: My first job
+    runs-on: linux
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up env
+        uses: actions/setup@v1
+        with:
+          python-version: 3.9.13
+      - name: Install Dependencies
+        run: make install
+      - name: Lint
+        run: make lint
+      - name: Test
+        run: make test
