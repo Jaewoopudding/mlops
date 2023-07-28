@@ -1,5 +1,4 @@
 name: jaewoo_test
-run_name: Deploy new code 
 on: [push, fork]
 jobs:
   my_fisrt_job:
