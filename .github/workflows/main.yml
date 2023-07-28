@@ -1,9 +1,8 @@
 name: jaewoo_test
 on: [push, fork]
 jobs:
-  my_fisrt_job:
-    name: My first job
-    runs-on: linux
+  my_second_job:
+    name: My second job
     steps:
       - uses: actions/checkout@v2
       - name: Set up env
