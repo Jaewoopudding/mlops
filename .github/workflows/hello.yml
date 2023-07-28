@@ -1,6 +1,7 @@
 name: jaewoo_test1
 on: [push, fork]
 jobs:
+  my_first_jobs:
     name: My first job
     runs-on: ubuntu-latest
     steps:
