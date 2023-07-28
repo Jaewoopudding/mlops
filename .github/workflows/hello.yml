@@ -2,7 +2,7 @@ name: jaewoo_test1
 on: [push, fork]
 jobs:
   name: My first job
-  runs-on: ununtu-latest
+  runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
     - name: Set up env

@@ -3,7 +3,7 @@ on: [push, fork]
 jobs:
   my_second_job:
     name: My second job
-    runs-on: ununtu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Set up env
